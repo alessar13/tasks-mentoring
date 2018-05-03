@@ -1,22 +1,34 @@
 //Сделайте функцию uniq, которая будет оставлять в массиве только уникальные элементы 
 //(то есть будет удалять дубли).
 
-//Решение сам не осилил... Взял с learnjavascript.ru.... Сам бы перебирал бы вложенным циклом...
 
-
-function uniq(array)
-    {   
-        var obj = {};
-
-        for (let i = 0; i < array.length; i++) 
+function uniq(arr) 
+{
+    for (let i = 0; i < arr.length; i++) 
+    {
+        for (let j = 0; j < arr.length; j++) 
         {
-            var str = array[i];
-            obj[str] = true;  
+            if (arr[i] == arr[j]) 
+            {
+                arr = deleteCopies(arr, arr[i])
+            }     
         }
-        
-        return Object.keys(obj);
-    
     }
 
+    return arr;
+    
+}
 
-alert(uniq([2,2,3,4,4,6,6,7]))
+function deleteCopies (arr, num) 
+{
+    var arr1 = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== num)
+        {
+            arr1.push(arr[i]);
+        }
+        
+    }    
+    return arr1;
+}
+alert(uniq([2,2,3,4,4,6,6,7]));
