@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Задачник HTML и CSS от Трепачёва Дмитрия</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+			margin: 0;
+			padding: 0;
+		}
+
+		h1, h2 {
+			text-align: center;
+			margin: 0;
+			padding: 0;
+		}
+
+		#wrapper {
+			width: 700px;
+			margin: 50px auto;
+		}
+
+		#div {
+			outline: 1px solid black;
+			margin: 0;
+			padding:0;
+		}
+		.active {
+			color:#484848;
+			
+			
+        }
+
+		#menu {
+			background-color: #484848;
+			height: 30px;
+			margin-bottom: 20px;
+		}
+
+		#menu ul{
+			margin: 0px;
+			padding: 0;
+		}
+
+		#menu li {
+			float: left;
+			list-style-type: none;
+		}
+
+		#menu li a:link, #menu li a:visited{
+			color: #fff;
+			text-decoration: none;
+			margin-right: 10px;
+			display: block;
+			line-height: 30px;
+			padding: 0 5px;
+		}
+
+		#menu li a:hover, #menu li a.active {
+			color: black;
+			background-color: #fff;
+		}
+		p {
+			padding: 0 10px;
+			font-size: 18px;
+			text-align: justify;
+		}
+
+		p a {
+			font-weight: bold;
+			color: black;
+		}
+
+		#footer {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+
+
+    </style>    
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="div">
+			<div id="menu">
+				<ul>
+					<li><a href="" class="active">Главная</a></li>
+					<li><a href="">Новости</a></li>
+					<li><a href="">Контакты</a></li>
+					<li><a href="">О компании</a></li>
+					<li><a href="">Как добраться</a></li>
+				</ul>
+			</div>
+			<h1>Vestibulum ante ipsum</h1>
+			<p>
+				Vestibulum ante ipsum primis <a href="">in faucibus orci luctus</a> et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu fermentum diam, vitae faucibus ligula. Nam nec risus sed nisi porttitor ullamcorper iaculis ac nulla. Sed condimentum nisi in tincidunt adipiscing. Mauris vehicula mollis consequat. Vivamus non accumsan tortor. Aliquam dictum justo et augue viverra, vel interdum lorem pharetra.
+			</p>
+			<p>
+				Nullam id faucibus ante. <a href="">Proin tristique lorem</a> tristique dolor porttitor, eget adipiscing leo gravida. Proin erat erat, laoreet sit amet tincidunt ac, iaculis nec libero. In placerat odio ac dapibus faucibus. Praesent ut est in ligula facilisis congue eget ac ante. Phasellus at felis vitae est molestie ultricies.
+			</p>
+		</div>
+		<div id="footer">
+			Aenean eu auctor diam, et euismod nulla. Nulla lacinia ultricies accumsan &copy; site.ru
+		</div>
+	</div>
+</body>
+</html>
