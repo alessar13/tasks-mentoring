@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        div {
+            margin-bottom: 10px;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        #d1 {
+            letter-spacing: 4px;
+        }
+        #d2 {
+            letter-spacing: -1px;
+        }
+        #d3 {
+            word-spacing: 10px;
+        }
+        #d4 {
+            word-spacing: -4px;
+        }
+        #d5 {
+            font-variant:small-caps;
+        }
+        #d6 {
+            text-transform:capitalize;
+        }
+
+            table, td{
+                border: 1px solid #004800;
+            }
+            table{
+                border-spacing: 10px 5px;
+            }
+            td{
+                background-color: green;
+                empty-cells: hide;
+                color: white;
+                padding: 3px;
+                table-layout:auto;
+            }
+
+            .text-align-last {
+                text-align-last: right;
+            }
+
+            .flow {
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+            }
+            .flow1 {
+                width: 100px;
+                height: 100px;
+                overflow-y: auto;
+            }
+            .flow2 {
+                width: 250px;
+                height: 250px;
+                overflow: scroll;
+            }
+            .flow3 {
+                width: 100px;
+                height: 100px;
+                white-space: nowrap;
+            }
+            .flow4 {
+                width: 100px;
+                height: 100px;
+                white-space:nowrap;
+                overflow: auto;
+            }
+            .flow5 {
+                width: 100px;
+                height: 100px;
+                white-space:pre-wrap;
+                overflow-y: auto;
+            }
+
+            #dd1 {
+                border: 10px solid rgba(0, 0, 0, 0.3);
+
+                /* opacity: 0.5; */
+            }
+            #dd2 {
+                border: 10px solid black;
+                opacity: 0.5;
+            }
+
+            #d11 {
+                text-shadow: 5px 5px 0px black;
+            }
+            #d21 {
+                text-shadow: 5px 5px 10px black;
+            }
+            #d31 {
+                text-shadow: 5px 5px 10px black, 5px 5px 5px red;
+            }
+
+            .square {
+                width: 200px;
+                height: 200px;
+                cursor: pointer;
+            }
+            .square1 {
+                width: 200px;
+                height: 200px;
+                cursor:no-drop;
+            }
+            .square2 {
+                width: 200px;
+                height: 200px;
+                cursor: progress;
+            }
+            .square3 {
+                width: 200px;
+                height: 200px;
+                cursor: wait;
+            }
+            .square4 {
+                width: 200px;
+                height: 200px;
+                cursor: not-allowed;
+            }
+            .square5 {
+                width: 200px;
+                height: 200px;
+                cursor: move;
+            }
+
+
+    </style>
+</head>
+<body>
+    <div id="d1">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.
+	</div>
+	<div id="d2">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.
+	</div>
+	<div id="d3">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.
+	</div>
+	<div id="d4">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.
+	</div>
+	<div id="d5">
+		Большие маленькие буквы. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.
+	</div>
+	<div id="d6">
+		В html буквы в нижем регистре. Попробуйте скопировать этот текст. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.
+    </div>
+    
+    <div class="table" >
+
+            <table>
+                    <tr>
+                        <td>ячей</td>
+                        <td></td>
+                        <td>ячейка 3</td>
+                    </tr>
+                    <tr>
+                        <td>ячейка 4</td>
+                        <td>ячейка 5sssssssss</td>
+                        <td>ячейка 6</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>ячейка 8</td>
+                        <td></td>
+                    </tr>
+                </table>
+    </div>
+
+    <div class="text-align-last">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a dapibus magna, ac interdum nisl. Suspendisse eget fringilla nibh, eu commodo arcu. Donec lacinia tempor velit sed tincidunt. Aliquam porttitor nulla purus, vel vulputate ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehicula, ante purus lacinia dui, interdum fringilla massa eros ut dui.
+    </div>
+
+
+    <div class="overflow">
+
+        <div class="flow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.</div>
+        <div class="flow1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.</div>
+        <div class="flow2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.</div>
+        <div class="flow3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.</div>
+        <div class="flow4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.</div>
+        <div class="flow5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.</div>
+    </div>
+
+    <div id="dd1">
+            Это контейнер с полупрозрачной границей.
+            Но текст не прозрачный!
+        </div>
+    <div id="dd2">
+            Это полностью полупрозрачный контейнер.
+    </div>
+
+    <dir class="shadow">
+                <div id="d11">
+                    Текст с тенью.
+                </div>
+                <div id="d21">
+                    Текст с тенью + размытие.
+                </div>
+                <div id="d31">
+                    Текст с двумя тенями.
+                </div>
+                <div id="d41">
+                    Вдавленный текст.
+                </div>
+                <div id="d51">
+                    Объемный текст.
+                </div>
+                <div id="d61">
+                    Контур.
+                </div>
+    </dir>
+
+    <div class="square"></div>
+    <div class="square1"></div>
+    <div class="square2"></div>
+    <div class="square3"></div>
+    <div class="square4"></div>
+    <div class="square5"></div>
+    <div class="square6"></div>
+    <div class="square7"></div>
+
+</body>
+</html>
