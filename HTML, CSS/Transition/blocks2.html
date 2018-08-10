@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 5%;
+        }
+
+        .wrapper {
+            width: 80%;
+            padding: 10%;
+            margin: 0 auto;
+            border: 1px solid green;
+        }
+
+        .block {
+            border: 1px solid red;
+            width: 30%;
+            height: 50px;
+            margin-bottom: 5%;
+
+            transition: width 2s ease;
+
+        }
+
+        .block:last-child {
+            margin-bottom: 0%;
+        }
+
+        .block:hover +div+div+div {
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+
+</body>
+</html>

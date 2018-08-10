@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .q {
+            border: 1px solid red;
+            height: 100px;
+            width: 200px;
+            background-color: aquamarine;
+
+            transition: background-color 3s ease, width 3s ease;
+
+        }
+
+        .q:hover {
+            background-color: red;
+            width: 400px;
+        }
+
+        .w {
+            border: 1px solid red;
+            height: 100px;
+            width: 200px;
+            background-color: white;
+            color: red;
+
+            transition: color 3s ease, background-color 3s ease;
+
+        }
+
+        .w:hover {
+            background-color: red;
+            color: white;
+        }
+        .e {
+            border: 1px solid red;
+            height: 100px;
+            width: 200px;
+        
+            transition: width 5s ease;
+        }
+
+        .e:hover {
+            width: 600px;
+        }
+        .r {
+            border: 1px solid red;
+            font-size: 1rem;
+            height: 100px;
+            width: 20%;
+            color: red;
+        
+            transition: width 3s ease, font-size 3s ease;
+        }
+
+        .r:hover {
+            width: 90%;
+            font-size: 2.5rem;
+        }
+
+
+        .t {
+            border: 1px solid red;
+            /* font-size: 1rem; */
+            height: 100px;
+            width: 20%;
+            margin-left: 0%;
+            transition: width 3s ease, margin-left 3s ease;
+        }
+
+        .t:hover {
+            width: 80%;
+            margin-left: 15%;
+        }
+
+        .y {
+            border: 1px solid red;
+            height: 100px;
+            width: 20%;
+            transition: width 3s ease;
+        }
+
+        .y p {
+            position: absolute;
+            top: 39%;
+            left: 95%;
+            visibility: hidden;
+
+            transition: left 3s ease;
+        }
+
+        .y:hover>p {
+
+            visibility: visible;
+            top: 39%;
+            left: 2%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="q"></div><br />
+    <div class="w">Наведи на меня</div><br />
+    <div class="e"></div><br />
+    <div class="r">Наведи на меня</div><br />
+    <div class="t"></div><br />
+    <div class="y">
+        <p>Я лечууу...</p>
+    </div><br />
+    
+</body>
+</html>
