@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 30px;
+            padding: 5px;
+            margin: 0 0;
+        }
+
+        p {
+            font-size:1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+
+        @media screen and (min-width: 480px) and (max-width: 800px) {
+            html {
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            html {
+                font-size: 10px;
+            }
+        }
+        @media screen and (min-width: 800px) {
+            html {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Текст будет разного размера в зависимости от размера экрана. 
+        Точки: 480px, 800px.</p>
+
+    <h2>Заголовок</h2>
+</body>
+</html>

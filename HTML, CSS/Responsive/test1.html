@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+       @media screen and (max-width: 480px) {
+	html {
+		font-size: 10px;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 800px) {
+	html {
+		font-size: 15px;
+	}
+}
+@media screen and (min-width: 800px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	line-height: 1;
+	margin-bottom: 10px;
+	font-size: 3rem;
+}
+
+.block {
+	box-sizing: border-box;
+	border: 1px solid green;
+	margin-bottom: 20px;
+	padding: 1rem;
+	text-align: justify;
+	font: 14px/1.7 Arial;
+}
+
+.block img {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	max-width: 354px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row; 
+	justify-content: flex-start;
+}
+
+@media screen and (min-width: 900px) {
+	.block {
+		width: 32%;
+	}
+	.block:not(:nth-child(3n)) {
+		margin-right: 2%;
+	}
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Заголовок сайта</h1>
+        </header>
+        
+        <div class="row">
+            <div class="block">
+                <img src="monkey.jpg" alt="image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia tortor nisi, sed faucibus mauris lacinia in. Duis sagittis hendrerit dui, eu dignissim dolor porttitor dignissim. Pellentesque auctor dignissim sapien. Pellentesque quis mauris turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus elementum viverra est, ut accumsan orci dapibus ac. Proin tincidunt consequat nisi, a blandit mauris hendrerit pharetra.</p>
+            </div>
+            <div class="block">
+                <img src="monkey.jpg" alt="image">
+                <p>Nulla sit amet diam eget lacus aliquam iaculis ac et metus. Quisque eget tortor condimentum, semper felis quis, aliquet quam. Nam luctus laoreet dui nec tristique. Vestibulum in sollicitudin odio. Pellentesque malesuada nulla sit amet congue fermentum. Maecenas vehicula urna non libero rhoncus, vel sagittis tortor vehicula. Mauris faucibus sem id fermentum malesuada. Mauris mollis pellentesque sem, vitae cursus nulla posuere a. Vestibulum congue pellentesque elit, et bibendum ipsum aliquet id.</p>
+            </div>
+            <div class="block">
+                <img src="monkey.jpg" alt="image">
+                <p>Maecenas tincidunt erat sit amet metus placerat, id porttitor tortor hendrerit. Maecenas at erat dolor. Nam imperdiet diam nec nibh vulputate finibus. Proin ut porta orci. Sed ac placerat lectus. Nunc non erat at dui vehicula sagittis eget a nunc. Ut cursus mauris vitae orci luctus feugiat. Donec ultricies nec nibh ac aliquam.</p>
+            </div>
+            <div class="block">
+                <img src="monkey.jpg" alt="image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia tortor nisi, sed faucibus mauris lacinia in. Duis sagittis hendrerit dui, eu dignissim dolor porttitor dignissim. Pellentesque auctor dignissim sapien. Pellentesque quis mauris turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus elementum viverra est, ut accumsan orci dapibus ac. Proin tincidunt consequat nisi, a blandit mauris hendrerit pharetra.</p>
+            </div>
+            <div class="block">
+                <img src="monkey.jpg" alt="image">
+                <p>Nulla sit amet diam eget lacus aliquam iaculis ac et metus. Quisque eget tortor condimentum, semper felis quis, aliquet quam. Nam luctus laoreet dui nec tristique. Vestibulum in sollicitudin odio. Pellentesque malesuada nulla sit amet congue fermentum. Maecenas vehicula urna non libero rhoncus, vel sagittis tortor vehicula. Mauris faucibus sem id fermentum malesuada. Mauris mollis pellentesque sem, vitae cursus nulla posuere a. Vestibulum congue pellentesque elit, et bibendum ipsum aliquet id.</p>
+            </div>
+            <div class="block">
+                <img src="monkey.jpg" alt="image">
+                <p>Maecenas tincidunt erat sit amet metus placerat, id porttitor tortor hendrerit. Maecenas at erat dolor. Nam imperdiet diam nec nibh vulputate finibus. Proin ut porta orci. Sed ac placerat lectus. Nunc non erat at dui vehicula sagittis eget a nunc. Ut cursus mauris vitae orci luctus feugiat. Donec ultricies nec nibh ac aliquam.</p>
+            </div>
+            <div class="block">
+                <img src="monkey.jpg" alt="image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia tortor nisi, sed faucibus mauris lacinia in. Duis sagittis hendrerit dui, eu dignissim dolor porttitor dignissim. Pellentesque auctor dignissim sapien. Pellentesque quis mauris turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus elementum viverra est, ut accumsan orci dapibus ac. Proin tincidunt consequat nisi, a blandit mauris hendrerit pharetra.</p>
+            </div>
+            <div class="block">
+                <img src="monkey.jpg" alt="image">
+                <p>Nulla sit amet diam eget lacus aliquam iaculis ac et metus. Quisque eget tortor condimentum, semper felis quis, aliquet quam. Nam luctus laoreet dui nec tristique. Vestibulum in sollicitudin odio. Pellentesque malesuada nulla sit amet congue fermentum. Maecenas vehicula urna non libero rhoncus, vel sagittis tortor vehicula. Mauris faucibus sem id fermentum malesuada. Mauris mollis pellentesque sem, vitae cursus nulla posuere a. Vestibulum congue pellentesque elit, et bibendum ipsum aliquet id.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
