@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            from{
+                    margin-left: 10px;
+                    background-color: white;
+                }
+            to{
+                    margin-left: 400px;
+                    background-color: red;
+            }
+        }
+        .cube {
+            border: 1px solid red;
+            width: 50px;
+            height: 50px;
+            
+        }
+
+        .cube {
+            animation: move 2s ease-in 0s infinite alternate forwards;
+        }
+    </style>
+</head>
+<body>
+        <div class="cube"></div>
+</body>
+</html>

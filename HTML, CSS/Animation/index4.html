@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes s{
+            0% {margin-left: 0px;
+                margin-top: 0px;
+            }
+            25% {margin-left: 300px;
+                margin-top: 0px;
+            }
+            50% {margin-left: 300px;
+                margin-top: 300px;
+            }
+            75% {margin-left: 0px;
+                margin-top: 300px;
+            }
+            100% {margin-left: 0px;
+                margin-top: 0px;
+            }
+        }
+
+        .square {
+            border: 1px solid red;
+            height: 50px;
+            width: 50px;
+            margin: 20px;
+            animation: s 4s linear infinite normal none;
+        }
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+</body>
+</html>
