@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        @keyframes fall {
+           0% { margin-left: 0%; margin-top:0%;
+            animation-timing-function: ease-out;} 
+           15% { margin-left: 10%; margin-top:90%;
+            animation-timing-function: ease-in;} 
+           30% { margin-left: 15%; margin-top:70%;
+            animation-timing-function: ease-out;} 
+           45% { margin-left: 20%; margin-top:90%;
+            animation-timing-function: ease-in;} 
+           60% { margin-left: 25%; margin-top:80%;
+            animation-timing-function: ease-out;} 
+           75% { margin-left: 30%; margin-top:90%;
+            animation-timing-function: ease-in;} 
+           90% { margin-left: 35%; margin-top:85%;
+            animation-timing-function: ease-out;} 
+           100% { margin-left: 40%; margin-top:90%;} 
+        }
+        .square {
+            border: 1px solid red;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .ball {
+            position: absolute;
+            background: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            animation: fall 5s ease-in infinite;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="square">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

@@ -7,7 +7,24 @@
     <title>Document</title>
 
     <style>
-        
+
+        @keyframes a {
+            from{width: 100px;}
+            to{ width: 900px;}
+        }
+        .qw {
+            animation: a 4s ease infinite alternate;
+            animation-play-state: paused;
+        }
+        .qw {
+
+            border: 1px solid red;
+            height: 50px;
+        }
+
+        .qw:hover {
+            animation-play-state: running;
+        }
     </style>
 </head>
 <body>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        @keyframes a {
+            from{width: 10%;}
+            to{width: 90%;}
+        }
+        .hover {
+            border: 1px solid red;
+            height: 50px;
+            width: 400px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            line-height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .move {
+            border: 1px solid blue;
+            height: 50px;
+            width: 50px;
+            animation: a 4s linear infinite alternate;
+            animation-play-state: paused;
+        }
+
+        .hover:hover + .move {
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <div class="hover"> Наведи на меня</div>
+    <div class="move"></div>
+</body>
+</html>
