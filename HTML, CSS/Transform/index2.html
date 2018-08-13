@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .cube {
+            margin: 0 auto;
+            border: 1px solid red;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+        .cube1:hover {
+            transform-origin: right bottom;
+            transform: rotate(45deg);
+        }
+        .cube2:hover {
+            transform-origin: left bottom;
+            transform: rotate(45deg);
+        }
+        .cube3:hover {
+            transform-origin: center;
+            transform: rotate(45deg);
+        }
+        .cube4:hover {
+            transform-origin: right top;
+            transform: rotate(-45deg);
+        }
+        .cube5:hover {
+            transform-origin: right bottom;
+            transform: scale(2);
+        }
+        .cube6:hover {
+            transform-origin: right bottom;
+            transform: skew(45deg);
+        }
+    </style>
+</head>
+<body>
+        <div class="cube cube1"></div>
+        <div class="cube cube2"></div>
+        <div class="cube cube3"></div>
+        <div class="cube cube4"></div>
+        <div class="cube cube5"></div>
+        <div class="cube cube6"></div>
+</body>
+</html>

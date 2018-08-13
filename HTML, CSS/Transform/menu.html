@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        <style>
+            ul {
+                list-style-type: none;
+                display: flex;
+            }
+
+            li {
+                margin-right: 5px;
+                border: 1px solid blue;
+                padding: 10px;
+            }
+
+            a:link, a:visited {
+                text-decoration: none;
+                color: blue;
+            }
+
+            li:hover {
+                transform: rotate(11deg);
+            }
+
+            .checked{
+                transform: rotate(11deg);
+            }
+        </style>
+</head>
+<body>
+    <div class="wrapper">
+        <ul>
+            <li><a href="#">Ссылка 1</a></li>
+            <li class="checked"><a href="#" >Ссылка 2</a></li>
+            <li><a href="#">Ссылка 3</a></li>
+            <li><a href="#">Ссылка 4</a></li>
+            <li><a href="#">Ссылка 5</a></li>
+        </ul>
+    </div>
+</body>
+</html>
