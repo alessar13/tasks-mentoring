@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes anim {
+            from {transform: rotateY(0deg);}
+            to {transform: rotateY(180deg);}
+        }
+
+        .wrapper {
+            border: 1px solid blue;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 50px;
+            perspective:70px;
+            perspective-origin: left;
+            /* transform-style: preserve-3d; */
+            /* transform: rotatez(15deg); */
+        }
+
+        .test {
+            width: 100px;
+            height: 100px;
+            background: red;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+
+            transform-origin: center;
+            animation: anim 1s ease infinite alternate;
+            backface-visibility:visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="test">Hello</div>
+    </div>
+</body>
+</html>
