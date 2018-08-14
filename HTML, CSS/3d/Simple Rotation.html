@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        @keyframes rotate {
+            from {transform: rotateY(0deg);}
+            to {transform: rotateY(360deg);}
+        }
+        .rotate {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            margin: 100px auto;
+            perspective-origin: 20px;
+            animation: rotate 3s linear infinite;
+            transform-origin: center;
+            transform-style: preserve-3d;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="rotate">
+        Y-Rotation
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes anim {
+            from {transform: rotateY(0deg) rotateX(0deg);}
+            to {transform: rotateY(290deg) rotateX(135deg);}
+        }
+
+        body {
+            background-image: url("885188.jpg");
+        }
+
+        .cube div {
+            width: 100px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 1.5em;
+            position: absolute;
+            backface-visibility: visible;
+            border-radius: 50px;
+        }
+
+
+        .cube .center {
+            background-color: red;
+            border-radius: 50px;
+            top:0px;
+            left:0px;
+            transform: rotateY(180deg);
+        }
+        .cube .left {
+            background-color: blue;
+            border-radius: 50px;
+            top: 0px;
+            left: -100px;
+            transform: rotateY(-90deg) translate(100px);
+            transform-origin: right;
+        }
+        .cube .right {
+            background-color: black;
+            border-radius: 50px;
+            top:0px;
+            left:100px;
+            transform: rotateY(90deg) translate(-100px);
+            transform-origin: left;
+        }
+        .cube .bottom {
+            background-color: #A3B715;
+            border-radius: 50px;
+            top: 100px;
+            left:0px;
+            transform: rotateX(90deg);
+            transform-origin: top;
+        }
+        .cube .top {
+            background-color: green;
+            border-radius: 50px;
+            top: -100px;
+            left:0px;
+            transform: rotateX(-90deg) rotateY(180deg);
+            transform-origin: bottom;
+        }
+
+        .cube .back {
+            background-color: orange;
+            border-radius: 50px;
+            top: 0px;
+            left:0px;
+            transform: translate3d(0, 0, 100px)
+        }
+
+        .cube {
+            /* border: 1px solid blue; */
+            width: 100px;
+            height: 100px;
+            margin: 150px 100px;
+            position: relative;
+            transform: rotateY(270deg) rotateX(0deg);
+            border-radius: 50px;
+            transform-style: preserve-3d;
+            animation: anim 10s alternate infinite linear;
+        }
+    </style>
+</head>
+<body>
+        <div class="cube">
+            <div class="center">1</div>
+            <div class="left">2</div>
+            <div class="right">3</div>
+            <div class="bottom">4</div>
+            <div class="top">5</div>
+            <div class="back">6</div>
+        </div>
+</body>
+</html>

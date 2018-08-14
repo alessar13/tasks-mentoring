@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        @keyframes rotate {
+            from {transform: rotateY(0) rotateX(0);}
+            to {transform: rotateY(-360deg) rotateX(15deg);}
+        }
+
+        body {
+            background-image: url("lone_pine-wallpaper-3840x2160.jpg");
+        }
+
+        .wrapper {
+            margin: 100px auto;
+            /* border: 1px solid black; */
+            width: 200px;
+            height: 300px;
+            position: relative;
+
+            animation: rotate 8s linear infinite;
+            transform-origin: center;
+            transform-style: preserve-3d;
+        }
+
+        .dc {
+            width: 200px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+            border: 1px solid black;
+            position: absolute;
+            opacity: 0.8;
+        }
+        .dc a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .div1 {
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            box-shadow: 0 0 15px black;
+            transform: rotateY(45deg)  translateX(250px);
+        }
+        .div2 {
+            background-color: red;
+            color: rgb(64, 64, 252);
+            font-size: 25px;
+            box-shadow: 0 0 15px black;
+            transform: rotateY(90deg)  translateX(250px);
+        }
+        .div3 {
+            background-color: goldenrod;
+            color: black;
+            font-size: 25px;
+            box-shadow: 0 0 15px black;
+            transform: rotateY(135deg)  translateX(250px);
+        }
+        .div4 {
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            box-shadow: 0 0 15px black;
+            transform: rotateY(180deg)  translateX(250px);
+        }
+        .div5 {
+            background-color: red;
+            color: yellow;
+            font-size: 25px;
+            box-shadow: 0 0 15px black;
+            transform: rotateY(225deg)  translateX(250px);
+        }
+        .div6 {
+            background-color: silver;
+            color: rgb(54, 48, 48);
+            font-size: 25px;
+            box-shadow: 0 0 15px black;
+            transform: rotateY(270deg)  translateX(250px);
+        }
+        .div7 {
+            background-color: blue;
+            color: rgb(98, 231, 153);
+            font-size: 25px;
+            box-shadow: 0 0 15px black;
+            transform: rotateY(315deg)  translateX(250px);
+        }
+        .div8 {
+            background-color: violet;
+            color: black;
+            font-size: 45px;
+            box-shadow: 0 0 15px black;
+            transform: rotateY(360deg)  translateX(250px);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="div1 dc"><a href="https://en.wikipedia.org/wiki/Batman">Batman</a></div>
+        <div class="div2 dc"><a href="https://en.wikipedia.org/wiki/Superman">Superman</a></div>
+        <div class="div3 dc"><a href="https://en.wikipedia.org/wiki/Wonder_Woman">Wonder Woman</a></div>
+        <div class="div4 dc"><a href="https://en.wikipedia.org/wiki/Green_Lantern">Green Lantern</a></div>
+        <div class="div5 dc"><a href="https://en.wikipedia.org/wiki/Flash_(Barry_Allen)">Flash</a></div>
+        <div class="div6 dc"><a href="https://en.wikipedia.org/wiki/Cyborg">Cyborg</a></div>
+        <div class="div7 dc"><a href="https://en.wikipedia.org/wiki/Aquaman">Aquaman</a></div>
+        <div class="div8 dc"><a href="https://en.wikipedia.org/wiki/DC_Extended_Universe">DCEU</a></div>
+    </div>
+</body>
+</html>

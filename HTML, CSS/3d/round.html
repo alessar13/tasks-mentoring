@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        @keyframes round {
+            from{transform: rotateY(0deg);}
+            to{transform: rotateY(180deg);}
+        }
+        .wrapper {
+            border: 1px solid black;
+            width: 100px;
+            height: 200px;
+            margin: 150px 200px;
+            position: relative;
+            transform-origin: left;
+
+            animation: round 2s linear infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">qwerty</div>
+</body>
+</html>
