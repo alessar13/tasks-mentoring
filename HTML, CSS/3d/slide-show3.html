@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        <style>
+            @keyframes block1 {
+
+                0% {transform: rotateY(0deg);}
+                50% {transform: rotateY(180deg);}
+                100% {transform: rotateY(0deg);}
+
+            }
+
+            @keyframes rotate {
+                0% {transform: rotateY(0deg) rotateX(0deg);}
+                100% {transform: rotateY(-360deg) rotateX(15deg);}
+            }
+
+            body {
+                background: linear-gradient(to right, black 30%, grey 70%, white);
+            }
+            .outer {
+                margin-left: auto;
+                margin-right: auto;
+                width: 1000px;
+                margin-top: 400px;
+            }
+
+            .wrapper {
+                float: right;
+                width: 500px;
+                height: 100px;
+                /* border: 1px solid black; */
+                position: relative;
+
+                animation: rotate 24s infinite linear;
+                transform-origin: left;
+                transform-style: preserve-3d;
+            }
+
+            .wrapper>div {
+                width: 500px;
+                height: 100px;
+                backface-visibility: visible;
+                position: absolute;
+                transform-origin: left;
+            }
+
+            .wrapper>div>div.op {
+                float: left;
+                opacity: 0.3;
+                background-color: #ffffff;
+                width: 195px;
+                height: 100%;
+                /* border: 1px solid blue; */
+            }
+
+            .wrapper>div>div.show {
+                border-radius: 20px;
+                float: left;
+                opacity: 0.6;
+                background-color: #ffffff;
+                width: 300px;
+                height: 100%;
+                text-align: center;
+                padding: 30px;
+                box-sizing: border-box;
+                border: 1px solid white;
+                transform: rotateY(180deg);
+                box-shadow: 0 0 20px black;
+            }
+
+            #t6 {
+                transform: rotateY(300deg);
+            }
+            #t5 {
+                transform: rotateY(240deg);
+            }
+            #t4 {
+                transform: rotateY(180deg);
+            }
+            #t3 {
+                transform: rotateY(120deg);
+            }
+            #t2 {
+                transform: rotateY(60deg);
+            }
+            #t1 {
+                transform: rotateY(0deg);
+            }
+
+            #t1 .show {
+                background: rgb(39, 8, 35);
+                color: white;
+                font-size: 25px;
+                font-style:italic;
+                animation: block1 24s linear infinite step-end 2s;
+            }
+            #t2 .show {
+                background: blue;
+                color: white;
+                font-size: 25px;
+                font-style:italic;
+                animation: block1 24s linear infinite step-end 22s;
+            }
+            #t3 .show {
+                background: yellowgreen;
+                color: white;
+                font-size: 25px;
+                font-style:italic;
+                animation: block1 24s linear infinite step-end 18s;
+            }
+            #t4 .show {
+                background: green;
+                color: white;
+                font-size: 25px;
+                font-style:italic;
+                animation: block1 24s linear infinite step-end 14s;
+            }
+            #t5 .show {
+                background: cyan;
+                color: white;
+                font-size: 25px;
+                font-style:italic;
+                animation: block1 24s linear infinite step-end 10s;
+            }
+            #t6 .show {
+                background: magenta;
+                color: white;
+                font-size: 25px;
+                font-style:italic;
+                animation: block1 24s linear infinite step-end 6s;
+            }
+        </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="wrapper">
+            <div id="t6">
+                <div class="op"></div>
+                <div class="show">Batman</div>
+            </div>
+
+            <div id="t5">
+                <div class="op"></div>
+                <div class="show">Deadpool</div>
+            </div>
+
+            <div id="t4">
+                <div class="op"></div>
+                <div class="show">Joker</div>
+            </div>
+
+            <div id="t3">
+                <div class="op"></div>
+                <div class="show">Lex Luthor</div>
+            </div>
+
+            <div id="t2">
+                <div class="op"></div>
+                <div class="show">Anti-Monitor</div>
+            </div>
+
+            <div id="t1">
+                <div class="op"></div>
+                <div class="show">Darkseid</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
