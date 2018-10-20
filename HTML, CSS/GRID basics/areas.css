@@ -1,0 +1,46 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "header header header"
+    "sidebar1 main sidebar2"
+    "footer footer footer";
+    
+        
+}
+
+.header {
+    background-color: blueviolet;
+    grid-area: header;
+}
+
+.sidebar1 {
+    background-color: blanchedalmond;
+    padding: 5px;
+    grid-area: sidebar1;
+}
+.sidebar2{
+    background-color: rgb(224, 125, 248);
+    padding: 5px;
+    grid-area: sidebar2;
+}
+
+.main {
+    background-color: aqua;
+    padding: 5px;
+    grid-area: main;
+}
+
+.footer {
+    background-color: greenyellow;
+    padding: 5px;
+    min-height: 50px;
+    grid-area: footer;
+}

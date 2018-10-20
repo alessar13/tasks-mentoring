@@ -1,0 +1,39 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.5fr;
+    
+}
+
+.header {
+    grid-column: 1 / -1;
+    background-color: blueviolet;
+    min-height: 50px;
+    padding: 5px;
+}
+
+.sidebar {
+    background-color: blanchedalmond;
+    padding: 5px;
+}
+.sidebar2{
+    background-color: rgb(224, 125, 248);
+    padding: 5px;
+}
+
+.main {
+    background-color: aqua;
+    padding: 5px;
+}
+
+.footer {
+    background-color: greenyellow;
+    padding: 5px;
+    grid-column: 1 / -1;
+    min-height: 50px;
+}
